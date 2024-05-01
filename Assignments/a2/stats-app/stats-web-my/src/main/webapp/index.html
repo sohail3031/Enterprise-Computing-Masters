@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stats Web Application</title>
+  </head>
+  <body>
+    <h1>Stats Web Application</h1>
+    <form action="add-data" method="get">
+      <label for="value">Enter a data value to add:</label>
+      <input type="text" id="value" name="value" />
+      <input type="submit" value="Add and Save" />
+    </form>
+    <form action="get" method="get">
+      <label for="value">Enter a query message:</label>
+      <select id="value" name="value">
+        <option value="count">Count</option>
+        <option value="min">Min</option>
+        <option value="max">Max</option>
+        <option value="mean">Mean</option>
+        <option value="std">Std</option>
+        <option value="summary">Summary</option>
+      </select>
+      <input type="submit" value="Get Result" />
+    </form>
+    <form action="insert-data" method="get">
+      <label for="value">Enter a data value to insert:</label>
+      <input type="text" id="value" name="value" />
+      <input type="submit" value="Insert and Create Model" />
+    </form>
+  </body>
+</html>

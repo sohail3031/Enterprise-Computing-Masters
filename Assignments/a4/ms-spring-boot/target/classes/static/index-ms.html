@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ranking Service Test Page</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      function getGrade() {
+        var score = document.getElementById("score").value;
+        fetch("/grade/" + score)
+          .then((response) => response.text())
+          .then(
+            (data) => (document.getElementById("result").textContent = data)
+          );
+      }
+
+      function getRank() {
+        var score = document.getElementById("score").value;
+
+        fetch("/rank/" + score)
+          .then((response) => response.text())
+          .then(
+            (data) => (document.getElementById("result").textContent = data)
+          );
+      }
+
+      function getGradeAndRank() {
+        var score = document.getElementById("score").value;
+        fetch("/grade-rank/" + score)
+          .then((response) => response.text())
+          .then(
+            (data) => (document.getElementById("result").textContent = data)
+          );
+      }
+
+      function predict() {
+        var attributes = document
+          .getElementById("attributes")
+          .value.split(",")
+          .map(Number);
+        fetch("/predict/" + attributes)
+          .then((response) => response.json())
+          .then((data) => {
+            document.getElementById("predictionResult").textContent =
+              "Prediction: " + data;
+          });
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Ranking Service Test</h1>
+    <input type="number" id="score" placeholder="Enter score" />
+    <button onclick="getGrade()" id="gradeButton">Get Grade</button>
+    <button onclick="getRank()">Get Rank</button>
+    <button onclick="getGradeAndRank()">Get Both</button>
+    <div>
+      <p id="result"></p>
+    </div>
+    <br />
+    <br />
+    <br />
+    <form id="predictionForm">
+      <input
+        type="text"
+        id="attributes"
+        placeholder="Enter attributes comma-separated"
+      />
+      <button type="button" onclick="predict()">Predict</button>
+    </form>
+    <div id="predictionResult"></div>
+  </body>
+</html>

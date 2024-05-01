@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+                           http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- Definition of the Grade bean with id 'grade-bean' -->
+    <bean id="grade-bean" class="ec.asgmt.GradeImpl">
+        <!-- Setting the property 'name' to 'Grade in Rank' -->
+        <property name="name" value="Grade in Rank" />
+    </bean>
+
+    <!-- Definition of the Rank bean with id 'rank-bean' -->
+    <bean id="rank-bean" class="ec.asgmt.RankImpl">
+        <!-- Injecting the grade-bean into the reference property 'grade' -->
+        <property name="grade" ref="grade-bean" />
+    </bean>
+
+</beans>

@@ -1,0 +1,7 @@
+ec\ws\ECWSServlet.class
+ec\servlet\ECServlet.class
+ec\ws\ECWS.class
+ec\servlet\LoginServlet.class
+ec\lab\EJBWebServlet.class
+ec\servlet\ECGenericServlet.class
+ec\servlet\ECHttpServlet.class

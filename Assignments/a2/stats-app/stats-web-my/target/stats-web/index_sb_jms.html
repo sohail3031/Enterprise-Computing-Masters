@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stats JMS Stateless Example</title>
+  </head>
+  <body>
+    <h1>Stats JMS Stateless Example</h1>
+    <form action="sbproducer" method="get">
+      <p>Enter a message to send to the queue:</p>
+      <input type="text" name="message" value="save" readonly />
+      <input type="submit" value="Send" />
+    </form>
+    <br />
+    <form action="sbpublisher" method="get">
+      <p>Enter a data value to publish to the topic:</p>
+      <input type="text" name="message" required />
+      <input type="submit" value="Publish" />
+    </form>
+  </body>
+</html>

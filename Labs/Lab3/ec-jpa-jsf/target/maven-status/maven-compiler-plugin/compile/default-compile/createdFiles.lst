@@ -1,0 +1,16 @@
+com\ec\lab\StatsSummary.class
+org\jboss\as\quickstarts\greeter\domain\UserDao.class
+org\jboss\as\quickstarts\greeter\web\CreateController.class
+org\jboss\as\quickstarts\greeter\domain\EJBUserDao.class
+org\jboss\as\quickstarts\greeter\Resources.class
+com\ec\lab\NavigationController.class
+org\jboss\as\quickstarts\greeter\web\ReadModelController.class
+com\ec\model\Model.class
+com\ec\model\ModelDao.class
+com\ec\model\ModelPersistentBean.class
+com\ec\lab\UserLogin.class
+org\jboss\as\quickstarts\greeter\domain\User.class
+com\ec\model\ModelEJBRemote.class
+com\ec\model\EJBModelDao.class
+org\jboss\as\quickstarts\greeter\web\GreetController.class
+org\jboss\as\quickstarts\greeter\web\CreateModelController.class

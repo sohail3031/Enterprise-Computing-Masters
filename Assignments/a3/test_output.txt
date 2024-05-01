@@ -1,0 +1,174 @@
+
+C:\Masters\Enterprise Computing\workspace\a3>rem batch test 
+
+C:\Masters\Enterprise Computing\workspace\a3>echo A3 batch test 
+A3 batch test
+
+C:\Masters\Enterprise Computing\workspace\a3>echo username:SOHAIL 
+username:SOHAIL
+
+C:\Masters\Enterprise Computing\workspace\a3>echo CD 
+CD
+
+C:\Masters\Enterprise Computing\workspace\a3>cd stats-app 
+
+C:\Masters\Enterprise Computing\workspace\a3\stats-app>call mvn clean install -q 
+Count: 2
+Min: 10.0
+Max: 100.0
+Mean: 55.0
+STD: 45.0
+<?xml version='1.0' encoding='UTF-8'?><wsdl:definitions xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:tns="http://ws.stats.ec/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:ns1="http://schemas.xmlsoap.org/soap/http" name="StatsWSImplService" targetNamespace="http://ws.stats.ec/">
+  <wsdl:message name="getMean">
+  </wsdl:message>
+  <wsdl:message name="getCount">
+  </wsdl:message>
+  <wsdl:message name="getCountResponse">
+    <wsdl:part name="return" type="xsd:int">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getMaxResponse">
+    <wsdl:part name="return" type="xsd:double">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getMeanResponse">
+    <wsdl:part name="return" type="xsd:double">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getMinResponse">
+    <wsdl:part name="return" type="xsd:double">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getMin">
+  </wsdl:message>
+  <wsdl:message name="getSTDResponse">
+    <wsdl:part name="return" type="xsd:double">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="getSTD">
+  </wsdl:message>
+  <wsdl:message name="getMax">
+  </wsdl:message>
+  <wsdl:portType name="StatsWS">
+    <wsdl:operation name="getMean">
+      <wsdl:input message="tns:getMean" name="getMean">
+    </wsdl:input>
+      <wsdl:output message="tns:getMeanResponse" name="getMeanResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMin">
+      <wsdl:input message="tns:getMin" name="getMin">
+    </wsdl:input>
+      <wsdl:output message="tns:getMinResponse" name="getMinResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCount">
+      <wsdl:input message="tns:getCount" name="getCount">
+    </wsdl:input>
+      <wsdl:output message="tns:getCountResponse" name="getCountResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSTD">
+      <wsdl:input message="tns:getSTD" name="getSTD">
+    </wsdl:input>
+      <wsdl:output message="tns:getSTDResponse" name="getSTDResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMax">
+      <wsdl:input message="tns:getMax" name="getMax">
+    </wsdl:input>
+      <wsdl:output message="tns:getMaxResponse" name="getMaxResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="StatsWSImplServiceSoapBinding" type="tns:StatsWS">
+    <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="getMean">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getMean">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getMeanResponse">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMin">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getMin">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getMinResponse">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCount">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getCount">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getCountResponse">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSTD">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getSTD">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getSTDResponse">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getMax">
+      <soap:operation soapAction="" style="rpc"/>
+      <wsdl:input name="getMax">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getMaxResponse">
+        <soap:body namespace="http://ws.stats.ec/" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="StatsWSImplService">
+    <wsdl:port binding="tns:StatsWSImplServiceSoapBinding" name="StatsWSImplPort">
+      <soap:address location="http://localhost:8080/stats-ws/StatsWSImpl"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions><html><body>
+<h1>Statistics Summary Information</h1>
+<p>Count: 2</p>
+<p>Min: 10.0</p>
+<p>Max: 100.0</p>
+<p>Mean: 55.0</p>
+<p>Standard Deviation: 45.0</p>
+</body></html>
+{"count":2}{"max":100.0}{"mean":55.0}{"std":45.0}Model file generated: C:/enterprise/tmp/model/weka_regression.bin
+Model summary: 
+
+Linear Regression Model
+
+sellingPrice =
+
+    -26.6882 * houseSize +
+      7.0551 * lotSize +
+  43166.0767 * bedrooms +
+  42292.0901 * bathroom +
+ -21661.1208
+
+Results
+======
+
+Correlation coefficient                  0.8663
+Mean absolute error                   4290.1357
+Root mean squared error               4795.5429
+Relative absolute error                 17.3992 %
+Root relative squared error             19.1726 %
+Total Number of Instances                3     
+
+Record with name 'weka-lr' deleted successfully from ecmodel table.
+Record inserted successfully into table: ecmodel
+Prediction: 219328.35717359098
+Name weka-lr
+Query 3198,9669,5,1,1,0
+Prediction: 219328.35717359098
+END

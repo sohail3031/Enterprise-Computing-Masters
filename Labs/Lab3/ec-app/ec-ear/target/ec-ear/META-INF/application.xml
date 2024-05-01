@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/application_7.xsd" version="7">
+  <description>This project packages ec-ejb and ec-ejb-web in an EAR; this is the EAR POM file</description>
+  <display-name>ec-ear</display-name>
+  <module>
+    <web>
+      <web-uri>ec-web.war</web-uri>
+      <context-root>/ec-web</context-root>
+    </web>
+  </module>
+  <module>
+    <ejb>ec-ejb.jar</ejb>
+  </module>
+  <module>
+    <web>
+      <web-uri>ec-ws.war</web-uri>
+      <context-root>/ec-ws</context-root>
+    </web>
+  </module>
+  <module>
+    <web>
+      <web-uri>ec-rs.war</web-uri>
+      <context-root>/ec-rs</context-root>
+    </web>
+  </module>
+  <library-directory>lib</library-directory>
+</application>

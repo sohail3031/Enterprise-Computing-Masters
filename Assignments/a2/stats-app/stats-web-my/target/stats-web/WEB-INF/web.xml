@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app> 
+  <servlet> 
+    <servlet-name>StatsSingletonServlet</servlet-name> 
+    <servlet-class>ec.asgmt.StatsSingletonServlet</servlet-class>
+  </servlet>
+  <servlet-mapping> 
+    <servlet-name>StatsSingletonServlet</servlet-name> 
+    <url-pattern>/addd-servlet</url-pattern> 
+  </servlet-mapping>
+  <!-- <servlet> 
+    <servlet-name>StatsStatefulServlet</servlet-name> 
+    <servlet-class>ec.asgmt.StatsStatefulServlet</servlet-class>
+  </servlet>
+  <servlet-mapping> 
+    <servlet-name>StatsStatefulServlet</servlet-name> 
+    <url-pattern>/insert-servlet</url-pattern> 
+  </servlet-mapping>
+  <servlet> 
+    <servlet-name>StatsStatelessServlet</servlet-name> 
+    <servlet-class>ec.asgmt.StatsStatelessServlet</servlet-class>
+  </servlet>
+  <servlet-mapping> 
+    <servlet-name>StatsStatelessServlet</servlet-name> 
+    <url-pattern>/get-servlet</url-pattern> 
+  </servlet-mapping>
+  <servlet> 
+    <servlet-name>StatsJMSProducerServlet</servlet-name> 
+    <servlet-class>ec.stats.jms.StatsJMSProducerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping> 
+    <servlet-name>StatsJMSProducerServlet</servlet-name> 
+    <url-pattern>/producer-servlet</url-pattern> 
+  </servlet-mapping>
+  <servlet> 
+    <servlet-name>StatsJMSPublisherServlet</servlet-name> 
+    <servlet-class>ec.stats.jms.StatsJMSPublisherServlet</servlet-class>
+  </servlet>
+  <servlet-mapping> 
+    <servlet-name>StatsJMSPublisherServlet</servlet-name> 
+    <url-pattern>/publisher-servlet</url-pattern> 
+  </servlet-mapping>
+  <servlet> 
+    <servlet-name>LoginServlet</servlet-name> 
+    <servlet-class>ec.stats.jms.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping> 
+    <servlet-name>LoginServlet</servlet-name> 
+    <url-pattern>/Login-servlet</url-pattern> 
+  </servlet-mapping>
+  <servlet> 
+    <servlet-name>StatsJMSStatelessProducerServlet</servlet-name> 
+    <servlet-class>ec.stats.jms.StatsJMSStatelessProducerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping> 
+    <servlet-name>StatsJMSStatelessProducerServlet</servlet-name> 
+    <url-pattern>/statelessproducer-servlet</url-pattern> 
+  </servlet-mapping>
+  <servlet> 
+    <servlet-name>StatsJMSStatelessPublisherServlet</servlet-name> 
+    <servlet-class>ec.stats.jms.StatsJMSStatelessPublisherServlet</servlet-class>
+  </servlet>
+  <servlet-mapping> 
+    <servlet-name>StatsJMSStatelessPublisherServlet</servlet-name> 
+    <url-pattern>/stateless-publisher-servlet</url-pattern> 
+  </servlet-mapping> -->
+</web-app>

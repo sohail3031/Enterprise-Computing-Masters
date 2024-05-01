@@ -1,0 +1,10 @@
+ec\asgmt\StatsJMSStateless.class
+ec\asgmt\StatsStatefulServlet.class
+ec\stats\jms\StatsJMSStatelessPublisherServlet.class
+ec\asgmt\StatsSingletonServlet.class
+ec\asgmt\StatsStatelessServlet.class
+ec\stats\jms\LoginServlet.class
+ec\asgmt\StatsJMSStatelessLocal.class
+ec\stats\jms\StatsJMSStatelessProducerServlet.class
+ec\stats\jms\StatsJMSPublisherServlet.class
+ec\stats\jms\StatsJMSProducerServlet.class

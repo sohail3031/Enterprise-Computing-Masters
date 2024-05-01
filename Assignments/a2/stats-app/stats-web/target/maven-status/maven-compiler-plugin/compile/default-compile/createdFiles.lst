@@ -1,0 +1,5 @@
+ec\stats\jms\StatsJMSPublisherServlet.class
+ec\stats\StatsSingletonServlet.class
+ec\stats\StatsStatefulServlet.class
+ec\stats\StatsStatelessServlet.class
+ec\stats\jms\StatsJMSProducerServlet.class

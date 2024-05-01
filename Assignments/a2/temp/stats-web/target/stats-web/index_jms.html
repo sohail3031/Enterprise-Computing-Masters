@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>JMS Clients in Servlet</title>
+</head>
+<body>
+    <h1>JMS Clients in Servlet</h1>
+    <form action="producer" method="get">
+        <input type="hidden" name="message" value="save">
+        <input type="submit" value="Send 'save' message to queue">
+    </form>
+    <form action="publisher" method="get">
+        <input type="text" name="message" placeholder="Enter a double value">
+        <input type="submit" value="Send data value to topic">
+    </form>
+</body>
+</html>

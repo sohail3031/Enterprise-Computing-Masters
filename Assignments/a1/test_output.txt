@@ -1,0 +1,38 @@
+
+C:\Masters\Enterprise Computing\workspace\a1>rem A1 batch test 
+
+C:\Masters\Enterprise Computing\workspace\a1>echo A1 batch test 
+A1 batch test
+
+C:\Masters\Enterprise Computing\workspace\a1>echo username:Mohammed Sohail Ahmed 
+username:Mohammed Sohail Ahmed
+
+C:\Masters\Enterprise Computing\workspace\a1>echo CD 
+CD
+
+C:\Masters\Enterprise Computing\workspace\a1>cd stats-mvn 
+
+C:\Masters\Enterprise Computing\workspace\a1\stats-mvn>call mvn clean -q 
+Count: 10000.0
+Min: 1.0
+Max: 10000.0
+Mean: 5000.5
+STD: 8.332083375E10
+<html><body>
+<h1>10 added, model saved</h1>
+</body></html>
+<html><body>
+<h1>Statistics of the array list</h1>
+<p>Count: 2</p>
+<p>Min: 10.0</p>
+<p>Max: 10.0</p>
+<p>Mean: 10.0</p>
+<p>Std: 10.0</p>
+</body></html>
+<html><body>
+<h1>count: 2</h1>
+</body></html>
+Count: 10
+Mean: 5.5
+Summary: Proxy for remote EJB StatefulEJBLocator for "/stats-ejb/StatsStateful", view is interface ec.asgmt.StatsStatefulRemote, affinity is URI<http-remoting://localhost:8080>, session ID is UUIDSessionID [8b3ea225-981f-4096-ae68-d038c0470200]
+END

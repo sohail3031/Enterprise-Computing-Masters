@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Linear Regression Prediction</title>
+  </head>
+  <body>
+    <h1>Linear Regression Prediction</h1>
+    <p>
+      Enter a string of attributes separated by comma to predict the house
+      price.
+    </p>
+    <p>
+      E.g:
+      0.08829,12.50,7.870,0,0.5240,6.0120,66.60,5.5605,5,311.0,15.20,395.60,12.43
+    </p>
+    <form action="/spark-models/predict" method="GET">
+      <label for="features">Query:</label>
+      <input
+        type="text"
+        id="query"
+        name="features"
+        value="0.08829,12.50,7.870,0,0.5240,6.0120,66.60,5.5605,5,311.0,15.20,395.60,12.43"
+        disabled
+      />
+      <input type="submit" value="Predict" />
+    </form>
+  </body>
+</html>

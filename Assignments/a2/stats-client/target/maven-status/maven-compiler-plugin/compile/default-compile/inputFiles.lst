@@ -1,0 +1,13 @@
+C:\Masters\Enterprise Computing\workspace\a2\stats-client\src\main\java\ec\asgmt\StatsSingletonRemote.java
+C:\Masters\Enterprise Computing\workspace\a2\stats-client\src\main\java\ec\stats\jms\StatsJMSPublisher.java
+C:\Masters\Enterprise Computing\workspace\a2\stats-client\src\main\java\ec\stats\StatsSummary.java
+C:\Masters\Enterprise Computing\workspace\a2\stats-client\src\main\java\ec\stats\db\StatsDBDrop.java
+C:\Masters\Enterprise Computing\workspace\a2\stats-client\src\main\java\ec\stats\db\StatsDBCreate.java
+C:\Masters\Enterprise Computing\workspace\a2\stats-client\src\main\java\ec\stats\db\StatsDBDelete.java
+C:\Masters\Enterprise Computing\workspace\a2\stats-client\src\main\java\ec\stats\db\StatsDBSelect.java
+C:\Masters\Enterprise Computing\workspace\a2\stats-client\src\main\java\ec\asgmt\StatsStatefulRemote.java
+C:\Masters\Enterprise Computing\workspace\a2\stats-client\src\main\java\ec\stats\db\StatsDBInsert.java
+C:\Masters\Enterprise Computing\workspace\a2\stats-client\src\main\java\ec\stats\jms\StatsJMSProducer.java
+C:\Masters\Enterprise Computing\workspace\a2\stats-client\src\main\java\ec\jms\ContextUtil.java
+C:\Masters\Enterprise Computing\workspace\a2\stats-client\src\main\java\ec\lab\StatsSBClientEar.java
+C:\Masters\Enterprise Computing\workspace\a2\stats-client\src\main\java\ec\asgmt\StatsStatelessRemote.java

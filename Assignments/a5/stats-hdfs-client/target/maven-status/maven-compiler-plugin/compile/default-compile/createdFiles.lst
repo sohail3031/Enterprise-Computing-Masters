@@ -1,0 +1,5 @@
+ec\hdfs\StatsHDFSClient.class
+ec\hdfs\Centroids.class
+ec\hdfs\KmeansHDFSClient.class
+ec\hdfs\KmeansPredict.class
+ec\hdfs\StatsSummary.class

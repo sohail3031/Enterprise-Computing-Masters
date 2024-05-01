@@ -1,0 +1,4 @@
+ec\stats\StatsOSGi.class
+ec\stats\Activator.class
+ec\stats\StatsOSGiImpl.class
+ec\stats\StatsSummary.class

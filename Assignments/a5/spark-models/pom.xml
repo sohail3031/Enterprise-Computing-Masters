@@ -1,0 +1,125 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>ec.asgmt</groupId>
+  <artifactId>spark-models</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>spark-models</name>
+	<description>Simple spark-models project</description>
+	<packaging>war</packaging>
+	<parent>
+		<groupId>ec.lab</groupId>
+		<artifactId>ec-pom</artifactId>
+		<version>0.1.0</version>
+	</parent>
+  <properties>
+		<!-- Define Java version -->
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+  <dependencies>
+    <!-- Apache Spark dependency -->
+    <dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-core_2.12</artifactId>
+        <version>3.1.1</version>
+    </dependency>
+
+    <!-- Spark SQL for working with structured data -->
+    <dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-sql_2.12</artifactId>
+        <version>3.1.1</version>
+    </dependency>
+
+    <!-- MLlib for machine learning -->
+    <dependency>
+        <groupId>org.apache.spark</groupId>
+        <artifactId>spark-mllib_2.12</artifactId>
+        <version>3.0.1</version>
+    </dependency>
+
+    <!-- JDBC Connector -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.23</version>
+    </dependency>
+
+    <dependency>
+			<groupId>org.wildfly</groupId>
+			<artifactId>wildfly-client-all</artifactId>
+			<version>18.0.1.Final</version>
+		</dependency>
+
+    <dependency>
+			<groupId>nz.ac.waikato.cms.weka</groupId>
+			<artifactId>weka-stable</artifactId>
+			<version>3.8.0</version>
+		</dependency>
+
+  <dependency>
+    <groupId>com.talkingdata.fregata</groupId>
+    <artifactId>spark</artifactId>
+    <version>0.0.3</version>
+  </dependency>
+		<dependency>
+			<groupId>org.jboss.spec.javax.servlet</groupId>
+			<artifactId>jboss-servlet-api_4.0_spec</artifactId>
+			<version>2.0.0.Final</version>
+			<scope>provided</scope>
+		</dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
+            <scope>provided</scope>
+        </dependency>
+</dependencies>
+<build>
+	<finalName>spark-models</finalName>
+		 <!-- <finalName>${project.artifactId}</finalName> -->
+		<!-- <plugins> -->
+		<!--	<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<version>3.1.1</version>
+				<executions>
+					<execution>
+						<id>copy-dependencies</id>
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${project.build.directory}/lib</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.wildfly.plugins</groupId>
+				<artifactId>wildfly-maven-plugin</artifactId>
+				<version>2.0.2.Final</version>
+				<configuration>
+					<skip>false</skip>
+				</configuration>
+			</plugin> -->
+			<!-- <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.2.2</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<addClasspath>true</addClasspath>
+							<classpathPrefix>lib/</classpathPrefix>
+							<mainClass>
+                    ec.asgmt.PredictionBean
+                </mainClass>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
+		</plugins> -->
+	</build>
+</project>
